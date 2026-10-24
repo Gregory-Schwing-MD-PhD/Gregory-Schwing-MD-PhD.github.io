@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Living CV – Gregory Schwing</title>
+  <meta name="description" content="Gregory Schwing's curriculum vitae, shown live from the Word document he keeps current." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0c0c0b;
+      --border: rgba(201,168,76,0.22);
+      --gold: #c9a84c;
+      --cream: #f0ead6;
+      --muted: #8a8478;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px 24px;
+      padding: 20px 16px 14px;
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 500;
+      font-size: 1.9rem;
+      letter-spacing: 0.02em;
+    }
+    h1 span { color: var(--gold); }
+    .links { display: flex; gap: 20px; font-size: 0.9rem; letter-spacing: 0.06em; }
+    a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--border); }
+    a:hover { border-bottom-color: var(--gold); }
+    .frame {
+      flex: 1;
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto 16px;
+      padding: 0 16px;
+      display: flex;
+    }
+    /* The document is the live OneDrive file: Word for the web renders it, so every save in
+       Word shows here with nothing to export. */
+    iframe {
+      flex: 1;
+      width: 100%;
+      min-height: 80vh;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: #fff;
+    }
+    .note { text-align: center; color: var(--muted); font-size: 0.8rem; padding: 0 16px 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gregory <span>Schwing</span> &middot; Living CV</h1>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="https://waynestateprod-my.sharepoint.com/:w:/g/personal/go2432_wayne_edu/IQAgca1MwxuIRabNmoRd4RIjAaH5BYzSlnWr3l-IQcGWphM?e=heSaIk" target="_blank" rel="noopener">Open in Word</a>
+    </div>
+  </header>
+  <div class="frame">
+    <iframe
+      src="https://waynestateprod-my.sharepoint.com/:w:/g/personal/go2432_wayne_edu/IQAgca1MwxuIRabNmoRd4RIjAaH5BYzSlnWr3l-IQcGWphM?e=heSaIk&amp;action=embedview"
+      title="Curriculum vitae of Gregory Schwing"
+      loading="lazy"></iframe>
+  </div>
+  <p class="note">Shown live from the Word document. If it does not appear, use Open in Word above.</p>
+</body>
+</html>
